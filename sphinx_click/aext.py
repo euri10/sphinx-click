@@ -1,6 +1,6 @@
 import traceback
 
-import click
+import asyncclick as click
 from docutils import nodes, statemachine
 from docutils.parsers import rst
 from docutils.parsers.rst import directives

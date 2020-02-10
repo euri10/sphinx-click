@@ -1,2 +1,3 @@
+asyncclick>=5.0,<8.0
 click>=5.0,<8.0
 coverage>4.3,<5.0
