@@ -1,5 +1,6 @@
 import traceback
 
+import asyncclick
 import click
 from docutils import nodes, statemachine
 from docutils.parsers import rst
