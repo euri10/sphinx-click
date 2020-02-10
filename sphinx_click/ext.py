@@ -332,7 +332,7 @@ class ClickDirective(rst.Directive):
 
         parser = getattr(mod, attr_name)
 
-        if not isinstance(parser, click.BaseCommand) or not isinstance(parser, asyncclick.BaseCommand):
+        if not isinstance(parser, click.BaseCommand) or not isinstance(parser, asyncclick.core.Command):
             raise self.error('"{}" of type "{}" is not derived from '
                              '"click.BaseCommand"'.format(
                                  type(parser), module_path))
