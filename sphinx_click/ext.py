@@ -6,6 +6,8 @@ from docutils.parsers import rst
 from docutils.parsers.rst import directives
 from sphinx.util import logging
 
+from sphinx_click.aext import AClickDirective
+
 LOG = logging.getLogger(__name__)
 CLICK_VERSION = tuple(int(x) for x in click.__version__.split('.')[0:2])
 
