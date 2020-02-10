@@ -291,7 +291,7 @@ def _format_command(ctx, show_nested, commands=None):
         yield ''
 
 
-class ClickDirective(rst.Directive):
+class AClickDirective(rst.Directive):
 
     has_content = False
     required_arguments = 1
@@ -406,8 +406,3 @@ class ClickDirective(rst.Directive):
 
         return self._generate_nodes(prog_name, command, None, show_nested,
                                     commands)
-
-
-def setup(app):
-    app.add_directive('click', ClickDirective)
-    app.add_directive('aclick', AClickDirective)
